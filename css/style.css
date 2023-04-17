@@ -15,8 +15,9 @@
 }
 
 .header-line{
-    margin-top: -28px;
+    margin-top: -24px;
     width: 100%;
+    transform: rotate(180deg);
 }
 
 header .navbar{
@@ -129,12 +130,16 @@ main .sample-categories li a i, main .categories-dropdown li a i{
 
 main .categories-dropdown{
     margin-right: 10px;
-    z-index: 2;
+    z-index: 3;
 }
 
-main .banner{
-    min-height: 400px;
-    width: 100%;
+.carousel-indicators li{
+    padding: 5px 25px !important;
+    margin-bottom: -15px;
+}
+
+.carousel-indicators li:nth-child(2){
+    margin: 0 10px -15px 10px;
 }
 
 .home-cards{
@@ -162,17 +167,22 @@ main .banner{
 
 .home-cards .card-body a:hover{
     background-color: var(--light-orange);
-    border: none;
+    border-color: var(--light-orange);
 }
 
-.footer-line{
+.footer-top-line{
     width: 100%;
     margin-top: 30px;
 }
 
+.footer-bottom-line{
+    width: 100%;
+    margin-top: -15px;
+}
+
 footer{
     background-color: var(--light-gray);
-    padding: 30px 5px 5px 5px;
+    padding: 30px 5px 30px 10px;
     color: var(--greenish-gray);
     overflow: hidden;
     margin-top: -10px;
@@ -185,14 +195,15 @@ footer{
 
 footer .categories, footer .contact, footer .copyright{
     padding: 20px;
-}
-
-footer .categories ul{
     overflow: hidden;
 }
 
 footer .categories ul li{
     padding: 5px;
+}
+
+footer .categories ul li::marker{
+    color: var(--cobalt-blue);
 }
 
 footer ul li a{
@@ -520,12 +531,43 @@ footer .copyright .logo img{
     main .sample-categories{
         display: none !important;
     }
+
+    .carousel-indicators li{
+        padding: 5px 15px !important;
+    }
 }
 
 @media (max-width: 576px){
+    .header-line, .footer-top-line, .footer-bottom-line{
+        height: 20px;
+    }
+
+    header .navbar .logo{
+        margin-bottom: 30px;
+    }
+
+    .advertisement{
+        top: -5px;
+    }
+
+    .advertisement ul{
+        margin: 55px 0;
+    }
+
+    .advertisement p{
+        font-size: 15px;
+        position: absolute;
+        right: 20px;
+        top: 0;
+    }
+
     .company-gallery .thumbnails img{
         width: 100px;
         height: 80px;
+    }
+
+    .home-cards .card-text span{
+        font-size: 22px;
     }
 
     footer{
