@@ -1,12 +1,11 @@
 if(document.getElementsByClassName("showcategories").length > 0){
     [...document.getElementsByClassName("showcategories")].map(btn => {
+        btn.addEventListener("click", () => {
+            document.getElementById("categories-dropdown-container").classList.toggle("d-none")
+        })
         btn.addEventListener("mouseenter", () => {
             document.getElementById("categories-dropdown-container").classList.toggle("d-none")
         })
-    })
-
-    window.addEventListener("click", () => {
-        document.getElementById("categories-dropdown-container").classList.add("d-none")
     })
 }
 

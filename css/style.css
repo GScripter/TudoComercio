@@ -539,11 +539,12 @@ footer .copyright .logo img{
 
 @media (max-width: 576px){
     .header-line, .footer-top-line, .footer-bottom-line{
-        height: 20px;
+        height: 25px;
     }
 
     header .navbar .logo{
         margin-bottom: 30px;
+        width: 120px;
     }
 
     .advertisement{
