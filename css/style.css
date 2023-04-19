@@ -97,13 +97,13 @@ main .sample-categories{
     position: relative;
     max-height: 100px;
     overflow: hidden;
+    border-radius: 0px;
 }
 
 main .showcategories{
     height: 100%;
     width: 150px;
     background-color: #328CC1;
-    border-radius: 0 8px 8px 0;
 }
 
 main .showcategories a{
@@ -133,13 +133,24 @@ main .categories-dropdown{
     z-index: 3;
 }
 
+.carousel-indicators{
+    position: absolute;
+    bottom: -20px;
+}
+
 .carousel-indicators li{
+    color: var(--white);
     padding: 5px 25px !important;
-    margin-bottom: -15px;
 }
 
 .carousel-indicators li:nth-child(2){
-    margin: 0 10px -15px 10px;
+    margin: 0 10px 0 10px;
+}
+
+.carousel-control{
+    font-size: 55px;
+    color: var(--white);
+    filter: brightness(40%);
 }
 
 .home-cards{
@@ -161,8 +172,12 @@ main .categories-dropdown{
     font-size: 20px;
 }
 
-.home-cards .card-text span{
-    font-size: 30px;
+.home-cards .card-text span, .home-cards .card-text i{
+    font-size: 25px;
+}
+
+.home-cards .card-body a{
+    width: 120px;
 }
 
 .home-cards .card-body a:hover{
@@ -305,14 +320,35 @@ footer .copyright .logo img{
 }
 
 .companies aside ul li input[type="checkbox"]{
-    transform: scale(1.5);
     margin-right: 10px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    width: 20px !important;
+    height: 20px !important;
+    appearance:none;
+    border-radius:10%;
+    border: 2px solid var(--white);
+    box-shadow: none;
+    font-size: 1em;
+}
+
+input[type='checkbox']:checked {
+  background-color: var(--light-orange);
+}
+
+input[type='checkbox']:checked:after {
+    content: '';
 }
 
 .companies aside ul .clear{
     cursor: pointer;
     padding-top: 20px;
     padding-bottom: 40px;
+}
+
+.companies aside ul .clear i{
+    margin-right: 10px;
 }
 
 .order{
@@ -339,6 +375,40 @@ footer .copyright .logo img{
 .companies-cards .card address i{
     color: var(--light-green);
     font-size: 25px;
+}
+
+.companies-cards .card a:hover{
+    background-color: var(--light-orange);
+    border-color: var(--light-orange);
+}
+
+.pagination .page-item{
+    margin: 0 8px;
+}
+
+.pagination .page-item a{
+    color: var(--greenish-gray);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.pagination .active{
+    background-color: var(--light-orange);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.pagination .active a{
+    color: var(--white);
+}
+
+.pagination .page-item:first-child a, .pagination .page-item:last-child a{
+    font-size: 30px;
+    color: var(--cobalt-blue);
 }
 
 /* Company Page */
@@ -508,7 +578,6 @@ footer .copyright .logo img{
 
     main .showcategories{
         padding: 10px;
-        border-radius: 10px;
         width: 100%;
     }
 
@@ -547,6 +616,11 @@ footer .copyright .logo img{
         width: 120px;
     }
 
+    .carousel-control{
+        font-size: 35px;
+        margin: -5px;
+    }
+
     .advertisement{
         top: -5px;
     }
@@ -567,7 +641,7 @@ footer .copyright .logo img{
         height: 80px;
     }
 
-    .home-cards .card-text span{
+    .home-cards .card-text span, .home-cards .card-text i{
         font-size: 22px;
     }
 
@@ -580,5 +654,23 @@ footer .copyright .logo img{
     .col-xl-custom{
         width: 20%;
     }
+
+    .carousel-control{
+        margin: -45px;
+    }
 }
 
+
+@media (min-width: 576px) and (max-width: 991px){
+    .carousel-control{
+        font-size: 40px;
+        margin: -10px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .carousel-control{
+        font-size: 40px;
+        margin: -40px;
+    }
+}
