@@ -17,3 +17,9 @@ THUMBNAILS.map(thumbnail => {
     })
 })
 
+
+if(document.getElementById("btn-filters")){
+    document.getElementById("btn-filters").addEventListener("click", () => {
+        document.getElementById("filters").classList.toggle("close")
+    })
+}

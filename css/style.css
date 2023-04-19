@@ -604,6 +604,18 @@ input[type='checkbox']:checked:after {
     .carousel-indicators li{
         padding: 5px 15px !important;
     }
+
+    .companies aside .filters{
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        height: 100% !important;
+    }
+
+    .companies aside .close{
+        height: 0px;
+        overflow: hidden;
+    }
 }
 
 @media (max-width: 576px){
@@ -672,5 +684,11 @@ input[type='checkbox']:checked:after {
     .carousel-control{
         font-size: 40px;
         margin: -40px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .companies-cards article .d-md-flex{
+        margin: -20px;
     }
 }

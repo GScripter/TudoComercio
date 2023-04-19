@@ -48,38 +48,45 @@
 
         <main class="container companies">
             <div class="row g-3">
-                <aside class="col-5 col-lg-3">
+                <aside class="col-12 col-lg-3">
                     <ul class="list-group mb-3 mb-lg-0">
-                        <li class="list-group-item"><a href="#"><< Todas as categorias</a></li>
-                        <li class="category list-group-item"><a href="#"><i class="fas fa-balance-scale"></i> Advogados</a></li>
-                        <li class="list-group-item"><a href="#"> - Advocacia Imobiliária (22)</a></li>
-                        <li class="list-group-item"><a href="#"> - Advocacia Imobiliária (22)</a></li>
-                        <li class="list-group-item"><a href="#"> - Advocacia Imobiliária (22)</a></li>
-                        <li class="list-group-item"><a href="#"> - Advocacia Imobiliária (22)</a></li>
-                        <li class="list-group-item"><a href="#"> - Advocacia Imobiliária (22)</a></li>
-                        <li class="list-group-item"><a href="#"> - Advocacia Imobiliária (22)</a></li>
-                        <li class="list-group-item"><a href="#"> - Advocacia Imobiliária (22)</a></li>
-                        <li class="list-group-item"><a href="#"> - Advocacia Imobiliária (22)</a></li>
-                        <li class="list-group-item"><a href="#"> - Advocacia Imobiliária (22)</a></li>
-                        <li class="list-group-item"><a href="#"> - Advocacia Imobiliária (22)</a></li>
-                        <li class="list-group-item"><a href="#"> - Advocacia Imobiliária (22)</a></li>
-                        <li class="list-group-item"><a href="#"> - Advocacia Imobiliária (22)</a></li>
-                        <ul class="list-unstyled">
-                            <li class="list-group-item pt-4 filter-region">Busque por região:</li>
-                            <li class="d-flex flex-wrap list-group-item"><input type="checkbox"> Zona Norte</li>
-                            <li class="d-flex flex-wrap list-group-item"><input type="checkbox"> Zona Leste</li>
-                            <li class="d-flex flex-wrap list-group-item"><input type="checkbox"> Zona Sul</li>
-                            <li class="d-flex flex-wrap list-group-item"><input type="checkbox"> Zona Oeste</li>
-                            <li class="d-flex flex-wrap list-group-item"><input type="checkbox"> Zona Centro-Sul</li>
-                            <li class="d-flex flex-wrap list-group-item"><input type="checkbox"> Zona Centro-Oeste</li>
-                            <li class="d-flex flex-wrap list-group-item clear"><i class="bi bi-x-circle-fill"></i> Limpar filtro</li>
+                        <ul class="list-unstyled d-flex flex-row flex-wrap flex-lg-column">
+                            <li class="list-group-item flex-fill text-center text-lg-start"><a href="#"><< Todas as categorias</a></li>
+                            <li class="category list-group-item flex-fill text-center text-lg-start"><a href="#"><i class="fas fa-balance-scale"></i> Advogados</a></li>
+                            <li id="btn-filters" class="d-lg-none list-group-item flex-fill text-center text-lg-start"><a href="#"><i class="bi bi-plus-circle-fill"></i> Mais filtros</a></li>
                         </ul>
+                        <div class="position-relative">
+                            <ul id="filters" class="close filters list-unstyled">
+                                <li class="list-group-item"><a href="#"> - Advocacia Imobiliária (22)</a></li>
+                                <li class="list-group-item"><a href="#"> - Advocacia Imobiliária (22)</a></li>
+                                <li class="list-group-item"><a href="#"> - Advocacia Imobiliária (22)</a></li>
+                                <li class="list-group-item"><a href="#"> - Advocacia Imobiliária (22)</a></li>
+                                <li class="list-group-item"><a href="#"> - Advocacia Imobiliária (22)</a></li>
+                                <li class="list-group-item"><a href="#"> - Advocacia Imobiliária (22)</a></li>
+                                <li class="list-group-item"><a href="#"> - Advocacia Imobiliária (22)</a></li>
+                                <li class="list-group-item"><a href="#"> - Advocacia Imobiliária (22)</a></li>
+                                <li class="list-group-item"><a href="#"> - Advocacia Imobiliária (22)</a></li>
+                                <li class="list-group-item"><a href="#"> - Advocacia Imobiliária (22)</a></li>
+                                <li class="list-group-item"><a href="#"> - Advocacia Imobiliária (22)</a></li>
+                                <li class="list-group-item"><a href="#"> - Advocacia Imobiliária (22)</a></li>
+                                <ul class="list-unstyled">
+                                    <li class="list-group-item pt-4 filter-region">Busque por região:</li>
+                                    <li class="d-flex flex-wrap list-group-item"><input type="checkbox"> Zona Norte</li>
+                                    <li class="d-flex flex-wrap list-group-item"><input type="checkbox"> Zona Leste</li>
+                                    <li class="d-flex flex-wrap list-group-item"><input type="checkbox"> Zona Sul</li>
+                                    <li class="d-flex flex-wrap list-group-item"><input type="checkbox"> Zona Oeste</li>
+                                    <li class="d-flex flex-wrap list-group-item"><input type="checkbox"> Zona Centro-Sul</li>
+                                    <li class="d-flex flex-wrap list-group-item"><input type="checkbox"> Zona Centro-Oeste</li>
+                                    <li class="d-flex flex-wrap list-group-item clear"><i class="bi bi-x-circle-fill"></i> Limpar filtro</li>
+                                </ul>
+                            </ul>
+                        </div>
                     </ul>
                 </aside>
-                <div class="col-7 col-lg-9">
+                <div class="col-12 col-lg-9">
                     <div class="row d-flex flex-row align-items-center mb-3 order">
-                        <span class="col-12 col-lg-6 mb-2 mb-lg-0">Você está em <b>Advogados</b></span>
-                        <div class="col-12 col-lg-6 d-lg-flex align-items-lg-center justify-content-lg-end order">
+                        <span class="col-6 mb-2 mb-lg-0">Você está em <b>Advogados</b></span>
+                        <div class="col-6 d-flex align-items-center justify-content-end order">
                             Ordenar por: 
                             <select id="" name="">
                                 <option value="">Ordem alfabética</option>
@@ -91,123 +98,248 @@
                     </div>
                     <!-- Companies Cards -->
                     <div class="companies-cards">
-                        <article class="card mb-2 text-center text-lg-start d-lg-flex flex-lg-row align-items-center justify-content-between">
-                            <div class="d-lg-flex align-items-center">
-                                <img src="imgs/enterprise.jpeg" alt="">
-                                <div>
-                                    <h2 class="mt-2 card-title">Japa Food</h2>
-                                    <address class="d-flex flex-column">
-                                        <span><i class="bi bi-phone"></i> (92) 3231-0001 /  9199-0001</span>
-                                        <span><i class="bi bi-map"></i> Rua Rio Mar, 534 A, Nossa Senhora das Graças - Manaus</span>
-                                    </address>
-                                </div>
+                        <div class="row g-2 justify-content-center">
+                            <div class="col-6 col-md-12 text-center text-md-start">
+                                <article class="card mb-2 d-md-flex flex-md-row align-items-center justify-content-between">
+                                    <div class="d-md-flex align-items-center">
+                                        <img src="imgs/enterprise.jpeg" alt="">
+                                        <div>
+                                            <h2 class="mt-2 card-title">Japa Food</h2>
+                                            <address class="d-flex flex-column">
+                                                <span><i class="bi bi-phone"></i> (92) 3231-0001 /  9199-0001</span>
+                                                <span><i class="bi bi-map"></i> Rua Rio Mar, 534 A, Nossa Senhora das Graças - Manaus</span>
+                                            </address>
+                                        </div>
+                                    </div>
+                                    <a class="mx-2 btn btn-secondary" href="#">Ver detalhes</a>
+                                </article>
                             </div>
-                            <a class="mx-2 btn btn-secondary" href="#">Ver detalhes</a>
-                        </article>
-                        <article class="card mb-2 text-center text-lg-start d-lg-flex flex-lg-row align-items-center justify-content-between">
-                            <div class="d-lg-flex align-items-center">
-                                <img src="imgs/enterprise.jpeg" alt="">
-                                <div>
-                                    <h2 class="mt-2 card-title">Japa Food</h2>
-                                    <address class="d-flex flex-column">
-                                        <span><i class="bi bi-phone"></i> (92) 3231-0001 /  9199-0001</span>
-                                        <span><i class="bi bi-map"></i> Rua Rio Mar, 534 A, Nossa Senhora das Graças - Manaus</span>
-                                    </address>
-                                </div>
+                            <div class="col-6 col-md-12 text-center text-md-start">
+                                <article class="card mb-2 d-md-flex flex-md-row align-items-center justify-content-between">
+                                    <div class="d-md-flex align-items-center">
+                                        <img src="imgs/enterprise.jpeg" alt="">
+                                        <div>
+                                            <h2 class="mt-2 card-title">Japa Food</h2>
+                                            <address class="d-flex flex-column">
+                                                <span><i class="bi bi-phone"></i> (92) 3231-0001 /  9199-0001</span>
+                                                <span><i class="bi bi-map"></i> Rua Rio Mar, 534 A, Nossa Senhora das Graças - Manaus</span>
+                                            </address>
+                                        </div>
+                                    </div>
+                                    <a class="mx-2 btn btn-secondary" href="#">Ver detalhes</a>
+                                </article>
                             </div>
-                            <a class="mx-2 btn btn-secondary" href="#">Ver detalhes</a>
-                        </article>
-                        <article class="card mb-2 text-center text-lg-start d-lg-flex flex-lg-row align-items-center justify-content-between">
-                            <div class="d-lg-flex align-items-center">
-                                <img src="imgs/enterprise.jpeg" alt="">
-                                <div>
-                                    <h2 class="mt-2 card-title">Japa Food</h2>
-                                    <address class="d-flex flex-column">
-                                        <span><i class="bi bi-phone"></i> (92) 3231-0001 /  9199-0001</span>
-                                        <span><i class="bi bi-map"></i> Rua Rio Mar, 534 A, Nossa Senhora das Graças - Manaus</span>
-                                    </address>
-                                </div>
+                            <div class="col-6 col-md-12 text-center text-md-start">
+                                <article class="card mb-2 d-md-flex flex-md-row align-items-center justify-content-between">
+                                    <div class="d-md-flex align-items-center">
+                                        <img src="imgs/enterprise.jpeg" alt="">
+                                        <div>
+                                            <h2 class="mt-2 card-title">Japa Food</h2>
+                                            <address class="d-flex flex-column">
+                                                <span><i class="bi bi-phone"></i> (92) 3231-0001 /  9199-0001</span>
+                                                <span><i class="bi bi-map"></i> Rua Rio Mar, 534 A, Nossa Senhora das Graças - Manaus</span>
+                                            </address>
+                                        </div>
+                                    </div>
+                                    <a class="mx-2 btn btn-secondary" href="#">Ver detalhes</a>
+                                </article>
                             </div>
-                            <a class="mx-2 btn btn-secondary" href="#">Ver detalhes</a>
-                        </article>
-                        <article class="card mb-2 text-center text-lg-start d-lg-flex flex-lg-row align-items-center justify-content-between">
-                            <div class="d-lg-flex align-items-center">
-                                <img src="imgs/enterprise.jpeg" alt="">
-                                <div>
-                                    <h2 class="mt-2 card-title">Japa Food</h2>
-                                    <address class="d-flex flex-column">
-                                        <span><i class="bi bi-phone"></i> (92) 3231-0001 /  9199-0001</span>
-                                        <span><i class="bi bi-map"></i> Rua Rio Mar, 534 A, Nossa Senhora das Graças - Manaus</span>
-                                    </address>
-                                </div>
+                            <div class="col-6 col-md-12 text-center text-md-start">
+                                <article class="card mb-2 d-md-flex flex-md-row align-items-center justify-content-between">
+                                    <div class="d-md-flex align-items-center">
+                                        <img src="imgs/enterprise.jpeg" alt="">
+                                        <div>
+                                            <h2 class="mt-2 card-title">Japa Food</h2>
+                                            <address class="d-flex flex-column">
+                                                <span><i class="bi bi-phone"></i> (92) 3231-0001 /  9199-0001</span>
+                                                <span><i class="bi bi-map"></i> Rua Rio Mar, 534 A, Nossa Senhora das Graças - Manaus</span>
+                                            </address>
+                                        </div>
+                                    </div>
+                                    <a class="mx-2 btn btn-secondary" href="#">Ver detalhes</a>
+                                </article>
                             </div>
-                            <a class="mx-2 btn btn-secondary" href="#">Ver detalhes</a>
-                        </article>
-                        <article class="card mb-2 text-center text-lg-start d-lg-flex flex-lg-row align-items-center justify-content-between">
-                            <div class="d-lg-flex align-items-center">
-                                <img src="imgs/enterprise.jpeg" alt="">
-                                <div>
-                                    <h2 class="mt-2 card-title">Japa Food</h2>
-                                    <address class="d-flex flex-column">
-                                        <span><i class="bi bi-phone"></i> (92) 3231-0001 /  9199-0001</span>
-                                        <span><i class="bi bi-map"></i> Rua Rio Mar, 534 A, Nossa Senhora das Graças - Manaus</span>
-                                    </address>
-                                </div>
+                            <div class="col-6 col-md-12 text-center text-md-start">
+                                <article class="card mb-2 d-md-flex flex-md-row align-items-center justify-content-between">
+                                    <div class="d-md-flex align-items-center">
+                                        <img src="imgs/enterprise.jpeg" alt="">
+                                        <div>
+                                            <h2 class="mt-2 card-title">Japa Food</h2>
+                                            <address class="d-flex flex-column">
+                                                <span><i class="bi bi-phone"></i> (92) 3231-0001 /  9199-0001</span>
+                                                <span><i class="bi bi-map"></i> Rua Rio Mar, 534 A, Nossa Senhora das Graças - Manaus</span>
+                                            </address>
+                                        </div>
+                                    </div>
+                                    <a class="mx-2 btn btn-secondary" href="#">Ver detalhes</a>
+                                </article>
                             </div>
-                            <a class="mx-2 btn btn-secondary" href="#">Ver detalhes</a>
-                        </article>
-                        <article class="card mb-2 text-center text-lg-start d-lg-flex flex-lg-row align-items-center justify-content-between">
-                            <div class="d-lg-flex align-items-center">
-                                <img src="imgs/enterprise.jpeg" alt="">
-                                <div>
-                                    <h2 class="mt-2 card-title">Japa Food</h2>
-                                    <address class="d-flex flex-column">
-                                        <span><i class="bi bi-phone"></i> (92) 3231-0001 /  9199-0001</span>
-                                        <span><i class="bi bi-map"></i> Rua Rio Mar, 534 A, Nossa Senhora das Graças - Manaus</span>
-                                    </address>
-                                </div>
+                            <div class="col-6 col-md-12 text-center text-md-start">
+                                <article class="card mb-2 d-md-flex flex-md-row align-items-center justify-content-between">
+                                    <div class="d-md-flex align-items-center">
+                                        <img src="imgs/enterprise.jpeg" alt="">
+                                        <div>
+                                            <h2 class="mt-2 card-title">Japa Food</h2>
+                                            <address class="d-flex flex-column">
+                                                <span><i class="bi bi-phone"></i> (92) 3231-0001 /  9199-0001</span>
+                                                <span><i class="bi bi-map"></i> Rua Rio Mar, 534 A, Nossa Senhora das Graças - Manaus</span>
+                                            </address>
+                                        </div>
+                                    </div>
+                                    <a class="mx-2 btn btn-secondary" href="#">Ver detalhes</a>
+                                </article>
                             </div>
-                            <a class="mx-2 btn btn-secondary" href="#">Ver detalhes</a>
-                        </article>
-                        <article class="card mb-2 text-center text-lg-start d-lg-flex flex-lg-row align-items-center justify-content-between">
-                            <div class="d-lg-flex align-items-center">
-                                <img src="imgs/enterprise.jpeg" alt="">
-                                <div>
-                                    <h2 class="mt-2 card-title">Japa Food</h2>
-                                    <address class="d-flex flex-column">
-                                        <span><i class="bi bi-phone"></i> (92) 3231-0001 /  9199-0001</span>
-                                        <span><i class="bi bi-map"></i> Rua Rio Mar, 534 A, Nossa Senhora das Graças - Manaus</span>
-                                    </address>
-                                </div>
+                            <div class="col-6 col-md-12 text-center text-md-start">
+                                <article class="card mb-2 d-md-flex flex-md-row align-items-center justify-content-between">
+                                    <div class="d-md-flex align-items-center">
+                                        <img src="imgs/enterprise.jpeg" alt="">
+                                        <div>
+                                            <h2 class="mt-2 card-title">Japa Food</h2>
+                                            <address class="d-flex flex-column">
+                                                <span><i class="bi bi-phone"></i> (92) 3231-0001 /  9199-0001</span>
+                                                <span><i class="bi bi-map"></i> Rua Rio Mar, 534 A, Nossa Senhora das Graças - Manaus</span>
+                                            </address>
+                                        </div>
+                                    </div>
+                                    <a class="mx-2 btn btn-secondary" href="#">Ver detalhes</a>
+                                </article>
                             </div>
-                            <a class="mx-2 btn btn-secondary" href="#">Ver detalhes</a>
-                        </article>
-                        <article class="card mb-2 text-center text-lg-start d-lg-flex flex-lg-row align-items-center justify-content-between">
-                            <div class="d-lg-flex align-items-center">
-                                <img src="imgs/enterprise.jpeg" alt="">
-                                <div>
-                                    <h2 class="mt-2 card-title">Japa Food</h2>
-                                    <address class="d-flex flex-column">
-                                        <span><i class="bi bi-phone"></i> (92) 3231-0001 /  9199-0001</span>
-                                        <span><i class="bi bi-map"></i> Rua Rio Mar, 534 A, Nossa Senhora das Graças - Manaus</span>
-                                    </address>
-                                </div>
+                            <div class="col-6 col-md-12 text-center text-md-start">
+                                <article class="card mb-2 d-md-flex flex-md-row align-items-center justify-content-between">
+                                    <div class="d-md-flex align-items-center">
+                                        <img src="imgs/enterprise.jpeg" alt="">
+                                        <div>
+                                            <h2 class="mt-2 card-title">Japa Food</h2>
+                                            <address class="d-flex flex-column">
+                                                <span><i class="bi bi-phone"></i> (92) 3231-0001 /  9199-0001</span>
+                                                <span><i class="bi bi-map"></i> Rua Rio Mar, 534 A, Nossa Senhora das Graças - Manaus</span>
+                                            </address>
+                                        </div>
+                                    </div>
+                                    <a class="mx-2 btn btn-secondary" href="#">Ver detalhes</a>
+                                </article>
                             </div>
-                            <a class="mx-2 btn btn-secondary" href="#">Ver detalhes</a>
-                        </article>
-                        <article class="card mb-2 text-center text-lg-start d-lg-flex flex-lg-row align-items-center justify-content-between">
-                            <div class="d-lg-flex align-items-center">
-                                <img src="imgs/enterprise.jpeg" alt="">
-                                <div>
-                                    <h2 class="mt-2 card-title">Japa Food</h2>
-                                    <address class="d-flex flex-column">
-                                        <span><i class="bi bi-phone"></i> (92) 3231-0001 /  9199-0001</span>
-                                        <span><i class="bi bi-map"></i> Rua Rio Mar, 534 A, Nossa Senhora das Graças - Manaus</span>
-                                    </address>
-                                </div>
+                            <div class="col-6 col-md-12 text-center text-md-start">
+                                <article class="card mb-2 d-md-flex flex-md-row align-items-center justify-content-between">
+                                    <div class="d-md-flex align-items-center">
+                                        <img src="imgs/enterprise.jpeg" alt="">
+                                        <div>
+                                            <h2 class="mt-2 card-title">Japa Food</h2>
+                                            <address class="d-flex flex-column">
+                                                <span><i class="bi bi-phone"></i> (92) 3231-0001 /  9199-0001</span>
+                                                <span><i class="bi bi-map"></i> Rua Rio Mar, 534 A, Nossa Senhora das Graças - Manaus</span>
+                                            </address>
+                                        </div>
+                                    </div>
+                                    <a class="mx-2 btn btn-secondary" href="#">Ver detalhes</a>
+                                </article>
                             </div>
-                            <a class="mx-2 btn btn-secondary" href="#">Ver detalhes</a>
-                        </article>
+                            <div class="col-6 col-md-12 text-center text-md-start">
+                                <article class="card mb-2 d-md-flex flex-md-row align-items-center justify-content-between">
+                                    <div class="d-md-flex align-items-center">
+                                        <img src="imgs/enterprise.jpeg" alt="">
+                                        <div>
+                                            <h2 class="mt-2 card-title">Japa Food</h2>
+                                            <address class="d-flex flex-column">
+                                                <span><i class="bi bi-phone"></i> (92) 3231-0001 /  9199-0001</span>
+                                                <span><i class="bi bi-map"></i> Rua Rio Mar, 534 A, Nossa Senhora das Graças - Manaus</span>
+                                            </address>
+                                        </div>
+                                    </div>
+                                    <a class="mx-2 btn btn-secondary" href="#">Ver detalhes</a>
+                                </article>
+                            </div>
+                            <div class="col-6 col-md-12 text-center text-md-start">
+                                <article class="card mb-2 d-md-flex flex-md-row align-items-center justify-content-between">
+                                    <div class="d-md-flex align-items-center">
+                                        <img src="imgs/enterprise.jpeg" alt="">
+                                        <div>
+                                            <h2 class="mt-2 card-title">Japa Food</h2>
+                                            <address class="d-flex flex-column">
+                                                <span><i class="bi bi-phone"></i> (92) 3231-0001 /  9199-0001</span>
+                                                <span><i class="bi bi-map"></i> Rua Rio Mar, 534 A, Nossa Senhora das Graças - Manaus</span>
+                                            </address>
+                                        </div>
+                                    </div>
+                                    <a class="mx-2 btn btn-secondary" href="#">Ver detalhes</a>
+                                </article>
+                            </div>
+                            <div class="col-6 col-md-12 text-center text-md-start">
+                                <article class="card mb-2 d-md-flex flex-md-row align-items-center justify-content-between">
+                                    <div class="d-md-flex align-items-center">
+                                        <img src="imgs/enterprise.jpeg" alt="">
+                                        <div>
+                                            <h2 class="mt-2 card-title">Japa Food</h2>
+                                            <address class="d-flex flex-column">
+                                                <span><i class="bi bi-phone"></i> (92) 3231-0001 /  9199-0001</span>
+                                                <span><i class="bi bi-map"></i> Rua Rio Mar, 534 A, Nossa Senhora das Graças - Manaus</span>
+                                            </address>
+                                        </div>
+                                    </div>
+                                    <a class="mx-2 btn btn-secondary" href="#">Ver detalhes</a>
+                                </article>
+                            </div>
+                            <div class="col-6 col-md-12 text-center text-md-start">
+                                <article class="card mb-2 d-md-flex flex-md-row align-items-center justify-content-between">
+                                    <div class="d-md-flex align-items-center">
+                                        <img src="imgs/enterprise.jpeg" alt="">
+                                        <div>
+                                            <h2 class="mt-2 card-title">Japa Food</h2>
+                                            <address class="d-flex flex-column">
+                                                <span><i class="bi bi-phone"></i> (92) 3231-0001 /  9199-0001</span>
+                                                <span><i class="bi bi-map"></i> Rua Rio Mar, 534 A, Nossa Senhora das Graças - Manaus</span>
+                                            </address>
+                                        </div>
+                                    </div>
+                                    <a class="mx-2 btn btn-secondary" href="#">Ver detalhes</a>
+                                </article>
+                            </div>
+                            <div class="col-6 col-md-12 text-center text-md-start">
+                                <article class="card mb-2 d-md-flex flex-md-row align-items-center justify-content-between">
+                                    <div class="d-md-flex align-items-center">
+                                        <img src="imgs/enterprise.jpeg" alt="">
+                                        <div>
+                                            <h2 class="mt-2 card-title">Japa Food</h2>
+                                            <address class="d-flex flex-column">
+                                                <span><i class="bi bi-phone"></i> (92) 3231-0001 /  9199-0001</span>
+                                                <span><i class="bi bi-map"></i> Rua Rio Mar, 534 A, Nossa Senhora das Graças - Manaus</span>
+                                            </address>
+                                        </div>
+                                    </div>
+                                    <a class="mx-2 btn btn-secondary" href="#">Ver detalhes</a>
+                                </article>
+                            </div>
+                            <div class="col-6 col-md-12 text-center text-md-start">
+                                <article class="card mb-2 d-md-flex flex-md-row align-items-center justify-content-between">
+                                    <div class="d-md-flex align-items-center">
+                                        <img src="imgs/enterprise.jpeg" alt="">
+                                        <div>
+                                            <h2 class="mt-2 card-title">Japa Food</h2>
+                                            <address class="d-flex flex-column">
+                                                <span><i class="bi bi-phone"></i> (92) 3231-0001 /  9199-0001</span>
+                                                <span><i class="bi bi-map"></i> Rua Rio Mar, 534 A, Nossa Senhora das Graças - Manaus</span>
+                                            </address>
+                                        </div>
+                                    </div>
+                                    <a class="mx-2 btn btn-secondary" href="#">Ver detalhes</a>
+                                </article>
+                            </div>
+                            <div class="col-6 col-md-12 text-center text-md-start">
+                                <article class="card mb-2 text-lg-start d-md-flex flex-md-row align-items-center justify-content-between">
+                                    <div class="d-md-flex align-items-center">
+                                        <img src="imgs/enterprise.jpeg" alt="">
+                                        <div>
+                                            <h2 class="mt-2 card-title">Japa Food</h2>
+                                            <address class="d-flex flex-column">
+                                                <span><i class="bi bi-phone"></i> (92) 3231-0001 /  9199-0001</span>
+                                                <span><i class="bi bi-map"></i> Rua Rio Mar, 534 A, Nossa Senhora das Graças - Manaus</span>
+                                            </address>
+                                        </div>
+                                    </div>
+                                    <a class="mx-2 btn btn-secondary" href="#">Ver detalhes</a>
+                                </article>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Pagination -->
