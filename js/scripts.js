@@ -50,7 +50,7 @@ THUMBNAILS.map(thumbnail => {
         evt.target.scrollIntoView({
             behavior: "smooth",
             inline: "center",
-            block: "end"
+            block: "nearest"
         })
     })
 })
