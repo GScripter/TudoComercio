@@ -101,15 +101,23 @@ main .sample-categories{
 }
 
 main .showcategories{
+    padding: 4px;
     height: 100%;
-    width: 150px;
+    width: 170px;
     background-color: #328CC1;
+    z-index: 5;
+    font-weight: bold;
 }
 
 main .showcategories a{
     color: var(--white);
     text-align: center;
     text-decoration: none;
+}
+
+main .showcategories img{
+    height: 23px;
+    margin-right: 3px;
 }
 
 main .sample-categories li, main .categories-dropdown li{
@@ -134,8 +142,8 @@ main .categories-dropdown{
 }
 
 .carousel-indicators{
-    position: absolute;
-    bottom: -20px;
+    bottom: -50px;
+    filter: brightness(40%);
 }
 
 .carousel-indicators li{
@@ -151,10 +159,11 @@ main .categories-dropdown{
     font-size: 55px;
     color: var(--white);
     filter: brightness(40%);
+    text-decoration: none;
 }
 
 .home-cards{
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .home-cards .card-img-top{
@@ -176,11 +185,26 @@ main .categories-dropdown{
     font-size: 25px;
 }
 
-.home-cards .card-body a{
-    width: 120px;
+.home-cards .card-body a:first-child{
+    width: 110px;
+    margin-right: 10px;
 }
 
-.home-cards .card-body a:hover{
+.home-cards .card-body a:last-child{
+    font-size: 25px;
+    background-color: #6C757D;
+    width: 40px;
+    height: 40px;
+    color: var(--white);
+    border-radius: 10px;
+}
+
+.home-cards .card-body a:first-child:hover{
+    background-color: var(--light-orange);
+    border-color: var(--light-orange);
+}
+
+.home-cards .card-body a:last-child:hover{
     background-color: var(--light-orange);
     border-color: var(--light-orange);
 }
@@ -241,6 +265,10 @@ footer .contact img{
     width: 50px;
     height: 50px;
     margin-right: 10px;
+}
+
+footer .contact ul li{
+    margin-bottom: 5px;
 }
 
 footer .contact ul li a:hover{
@@ -435,18 +463,63 @@ input[type='checkbox']:checked:after {
     height: 400px;
     object-fit: cover;
     border: 10px solid var(--light-gray);
+    border-bottom: none;
 }
 
 .company-gallery .thumbnails{
-    overflow: scroll;
+    overflow-x: scroll;
+    background-color: var(--light-gray);
+    padding: 5px 0;
+    border: 10px solid var(--light-gray);
+}
+
+.company-gallery .thumbnails::-webkit-scrollbar {
+      display: none;
 }
 
 .company-gallery .thumbnails img{
     width: 120px;
     height: 100px;
-    margin-right: -5px;
-    border-left: 10px solid var(--light-gray);
     cursor: pointer;
+    margin: 0 5px;
+}
+
+.company-gallery .thumbnails img:first-child{
+    margin-left: 0;
+}
+
+.company-gallery .thumbnails img:last-child{
+    margin-right: 0;
+}
+
+.company-gallery .badges{
+    margin-top: 10px;
+}
+
+.company-gallery .badges li:first-child a{
+    color: #3C5B98;
+}
+
+.company-gallery .badges li:last-child a i{
+    color: red;
+}
+
+.company-gallery .badges li:nth-child(2) a i{
+    color: #4D97C0;
+}
+
+.company-gallery .badges li a{
+    background-color: #DFE2EE;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #504A4A
+}
+
+.company-gallery .badges li span{
+    padding: 3px 8px;
+    clip-path: polygon(12% 1%, 100% 0%, 100% 100%, 9% 100%, 0% 50%); 
+    background-color: var(--light-gray);;
+    margin: 0 15px 0 3px;
 }
 
 .company-container span img{
@@ -630,7 +703,7 @@ input[type='checkbox']:checked:after {
 
     .carousel-control{
         font-size: 35px;
-        margin: -5px;
+        margin: -15px;
     }
 
     .advertisement{
@@ -668,22 +741,22 @@ input[type='checkbox']:checked:after {
     }
 
     .carousel-control{
-        margin: -45px;
+        margin: -55px;
     }
 }
 
 
 @media (min-width: 576px) and (max-width: 991px){
     .carousel-control{
-        font-size: 40px;
-        margin: -10px;
+        font-size: 50px;
+        margin: -15px;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1200px){
     .carousel-control{
-        font-size: 40px;
-        margin: -40px;
+        font-size: 50px;
+        margin: -35px;
     }
 }
 
