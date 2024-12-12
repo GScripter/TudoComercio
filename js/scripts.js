@@ -1,27 +1,21 @@
 if(document.getElementsByClassName("showcategories").length > 0){
-    // DropDown of categories from the home page
+    // DropDown of categories from the home page desktop
     [...document.getElementsByClassName("showcategories")].map(btn => {
-        if(screen.width <= 768){
-            btn.addEventListener("click", () => {
-                document.getElementById("categories-dropdown-container").classList.toggle("d-none")
-            })
-        }else{
-            btn.addEventListener("mouseenter", () => {
-                document.getElementById("categories-dropdown-container").classList.toggle("d-none")
-            })
-            btn.addEventListener("mouseleave", () => {
-                document.getElementById("categories-dropdown-container").classList.toggle("d-none")
-            })
-            document.getElementById("categories-dropdown-container").addEventListener("mouseenter", () => {
-                document.getElementById("categories-dropdown-container").classList.remove("d-none")
-            })
-            document.getElementById("categories-dropdown-container").addEventListener("mouseleave", () => {
-                document.getElementById("categories-dropdown-container").classList.add("d-none")
-            })
-        }
+        btn.addEventListener("mouseenter", () => {
+            document.getElementById("categories-dropdown-container").classList.toggle("d-none")
+        })
+        btn.addEventListener("mouseleave", () => {
+            document.getElementById("categories-dropdown-container").classList.toggle("d-none")
+        })
+        document.getElementById("categories-dropdown-container").addEventListener("mouseenter", () => {
+            document.getElementById("categories-dropdown-container").classList.remove("d-none")
+        })
+        document.getElementById("categories-dropdown-container").addEventListener("mouseleave", () => {
+            document.getElementById("categories-dropdown-container").classList.add("d-none")
+        })
     })
 
-    // Do not repeat sample categories from the home page
+    // Do not repeat sample categories from the home page desktop
     let spaceTopFilled = 0
     let totalCategoriesVisibleInTheTopRow = -1
     const SAMPLE_CATEGORIES = document.getElementsByClassName("sample-categories")[0]
@@ -50,6 +44,26 @@ if(document.getElementsByClassName("showcategories").length > 0){
             document.getElementById("categories-dropdown-container").children[0].appendChild(el)
         }
     })
+}
+
+// Mobile Categories
+document.getElementById("categories_button").onclick = function show_mobile_categories(){
+    document.getElementById("mobile_categories").style = "left: 0%; transition: .5s;"
+    if (document.getElementById("mobile_categories").style.left == "0%"){
+        document.getElementsByTagName("main")[0].addEventListener("click", () => {
+            document.getElementById("mobile_categories").style = "left: -100%; transition: .5s;"
+        })
+        document.getElementsByTagName("header")[0].addEventListener("click", () => {
+            document.getElementById("mobile_categories").style = "left: -100%; transition: .5s;"
+        })
+        document.getElementsByTagName("footer")[0].addEventListener("click", () => {
+            document.getElementById("mobile_categories").style = "left: -100%; transition: .5s;"
+        })
+    }
+}
+
+document.getElementById("close_mobile_categories").onclick = function close_mobile_categories(){
+    document.getElementById("mobile_categories").style = "left: -100%; transition: .5s;"
 }
 
 const THUMBNAILS = [...document.getElementsByClassName("image-thumbnail")]
