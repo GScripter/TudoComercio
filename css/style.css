@@ -153,8 +153,11 @@ main .showcategories img{
     text-align: end;
     cursor: pointer;
     color: var(--white);
+    background-color: var(--cobalt-blue);
+    padding: 10px;
     font-size: 30px;
-    margin: 10px;
+    position: sticky;
+    top: 0;
 }
 
 .mobile_categories h3{
